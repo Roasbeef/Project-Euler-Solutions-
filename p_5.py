@@ -31,7 +31,8 @@ def prime_factors(n):
 lcms = map(prime_factors, range(11, 21))
 #remove 12 to avoid duplicates
 lcms = lcms[:1] + lcms[2:]
-#multiply highest power of each prime factorization cutting off a repeat
+#list of highest power of each prime factorization cutting off a repeat
 lcms = sorted([max(x) ** x.count(max(x)) for x in lcms])[1:]
 from operator import mul
+#reduce list by multiplying
 result = reduce(mul, lcms)
