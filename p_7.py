@@ -2,10 +2,10 @@ import math
 # Find the 10,000st prime number
 
 
-def prime_range():
+def x_prime_number(x):
     primes = []
     num = 3
-    while len(primes) < 10000:
+    while len(primes) < x:
         if num % 2 == 0:
             num += 1
             continue
@@ -23,4 +23,4 @@ def is_prime(num):
             return False
     return True
 
-answer = prime_range()[-1]
+answer = x_prime_number(10000)[-1]

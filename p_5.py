@@ -1,3 +1,8 @@
+'''
+What is the smallest positive number that is evenly
+divisible by all of the numbers from 1 to 20?
+'''
+
 ############
 # version 1#
 ############
@@ -9,7 +14,7 @@ def lcm(a, b):
     return a * b / gcd(a, b)
 
 #fold list calculating lcm of each pair
-result = reduce(lcm, range(2, 21))
+answer = reduce(lcm, range(2, 21))
 
 #############
 # version 2 #
@@ -35,4 +40,4 @@ lcms = lcms[:1] + lcms[2:]
 lcms = sorted([max(x) ** x.count(max(x)) for x in lcms])[1:]
 from operator import mul
 #reduce list by multiplying
-result = reduce(mul, lcms)
+answer = reduce(mul, lcms)

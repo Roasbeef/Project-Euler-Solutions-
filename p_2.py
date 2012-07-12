@@ -1,3 +1,6 @@
+#Sum of even numbers of the fib sequence uner 4,000,000
+
+
 def fibs_under(n):
     fibs = [0, 1]
 
@@ -8,4 +11,4 @@ def fibs_under(n):
             return fibs[:-1]
     return fibs
 
-result = sum(filter(lambda x: x % 2 == 0, fibs_under(4000000)))
+answer = sum(filter(lambda x: x % 2 == 0, fibs_under(4000000)))
