@@ -6,5 +6,5 @@ the sum of the following one-hundred
 
 #numbers in text file
 with open("p_13.txt") as f:
-    result = str(sum([int(line) for line in f.readlines()]))[:10]
-    print result  # '5537376230'
+    result = str(sum((int(line) for line in f.readlines())))[:10]
+    print result  # '5537376230
