@@ -1,3 +1,8 @@
+"""
+What is the greatest product of four adjacent numbers
+in any direction (up, down, left, right, or diagonally)
+in the 20x20 grid?
+"""
 from operator import mul
 #text file with grid written to it
 with open("p_11.txt") as f:
