@@ -25,6 +25,6 @@ def len_collatz(starting_num):
     return steps + 1
 
 
-answer = max(((len_collatz(x), x) for x in xrange(1, 1000001)))
+answer = max(((len_collatz(x), x) for x in xrange(1, 1000001)))[1]
 
 print answer  # 837799
